@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="./styles.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light navbarShadow">
+        <a class="navbar-brand" href="#"><img alt="logo" class="logoHeight" src="./soleralogo.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse alignItemsRight" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#"><i class="fa fa-home fontClass" aria-hidden="true"></i></a>
+                <a class="nav-item nav-link" href="#"><i class="fa fa-user fontClass" aria-hidden="true"></i></a>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid marginTop10">
+        <div class="row margin0">
+            <div class="col-md-2 padding2">
+                <div class="sidebar">
+                    <a class="active firstmenumargin" href="#call">Call Details</a>
+                    <a href="#info">General Info</a>
+                    <a href="#lastservice">Last Service Details</a>
+                </div>
+            </div>
+            <div class="col-md-10 padding2">
+                <div class="content">
+                    <div class="row margin0 marginTop20">
+                        <div class="col-md-5">
+                            <form>
+                                <div class="form-group row">
+                                    <label for="contact"
+                                        class="col-sm-2 col-form-label col-form-label-sm">Contact:</label>
+                                    <label for="name" class="col-sm-5 col-form-label col-form-label-sm">Gautam</label>
+
+                                    <label for="designation"
+                                        class="col-sm-3 col-form-label col-form-label-sm">Designation:</label>
+                                    <label for="designationname"
+                                        class="col-sm-2 col-form-label col-form-label-sm">MD</label>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="colFormLabelSm"
+                                        class="col-sm-2 col-form-label col-form-label-sm">Phone:</label>
+                                    <div class="col-sm-5">
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>989898754</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                    <label for="colFormLabelSm"
+                                        class="col-sm-3 col-form-label col-form-label-sm">Call:</label>
+                                    <i class="fa fa-phone-square col-sm-2" style="font-size: x-large;padding-top: 5px;"
+                                        aria-hidden="true"></i>
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleFormControlSelect1">Service Type</label>
+                                    <select class="form-control" id="exampleFormControlSelect1">
+                                        <option>None</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <div class="col-sm-12 padding0">
+                                        <label for="comments">Comments</label>
+                                        <textarea class="form-control" aria-label="With textarea"></textarea>
+                                    </div>
+
+                                </div>
+
+                                <div class="form-group row" style="margin-top: 10px;">
+                                    <div class="col-sm-6">
+                                        <label for="exampleFormControlSelect1">Next Call</label>
+                                        <input type="date" class="form-control" id="exampleInputDate">
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label for="exampleFormControlSelect1">Purpose</label>
+                                        <select class="form-control" id="exampleFormControlSelect1">
+                                            <option>None</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                            <option>5</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn btn-class">Submit</button>
+                            </form>
+                        </div>
+                        <div class="col-md-1">
+                            <ul id="progressbar" class="text-center">
+                                <li class="active step0"></li>
+                                <li class="active step0"></li>
+                                <li class="active step0"></li>
+                                <li class="active step0"></li>
+                                <li class="active step0"></li>
+                            </ul>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="userBox">
+                                <div class="row padding0 themeColor">
+                                    <div class="col-md-2">Akansha</div>
+                                    <div class="col-md-5 offset-md-5">14-05-2020 05:38:38</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12"><u>Payment </u>- Follow on regarding payment.</div>
+                                </div>
+                            </div>
+                            <div class="userBox">
+                                <div class="row padding0 themeColor">
+                                    <div class="col-md-2">Akansha</div>
+                                    <div class="col-md-5 offset-md-5">14-05-2020 05:38:38</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12"><u>Choose </u>- Payment Delayed.</div>
+                                </div>
+                            </div>
+                            <div class="userBox">
+                                <div class="row padding0 themeColor">
+                                    <div class="col-md-2">Akansha</div>
+                                    <div class="col-md-5 offset-md-5">14-05-2020 05:38:38</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12"><u>Choose </u>- essrrty</div>
+                                </div>
+                            </div>
+                            <div class="userBox">
+                                <div class="row padding0 themeColor">
+                                    <div class="col-md-2">Akansha</div>
+                                    <div class="col-md-5 offset-md-5">14-05-2020 05:38:38</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12"><u>Follow on </u>- Next payment.</div>
+                                </div>
+                            </div>
+                            <div class="userBox">
+                                <div class="row padding0 themeColor">
+                                    <div class="col-md-2">Akansha</div>
+                                    <div class="col-md-5 offset-md-5">14-05-2020 05:38:38</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12"><u>Payment </u>- Next payment.</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <br>
+    <footer class="container-fluid text-center">
+        <p>Copyright <i class="fa fa-copyright"> 2020 <span style="color: #f18211;">Audatex</span></i>
+
+        </p>
+    </footer>
+</body>
+
+</html>
